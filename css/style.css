@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "League Spartan", sans-serif;
+  height: 100%;
+  background-image: url("../images/bg-pattern-top-desktop.svg"),
+    url("../images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 40%, 70%;
+  background-position: left top, right bottom -20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 9.2rem auto 0;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 3.2rem;
+  align-items: center;
+}
+
+.header,
+.rating {
+  grid-column: span 3;
+}
+.testimonial {
+  grid-column: span 2;
+}
+
+.header {
+  padding-right: 6.8rem;
+}
+
+.header h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: -1px;
+  margin-bottom: 3.2rem;
+}
+
+.header-description {
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: hsl(303, 10%, 53%);
+  line-height: 1.2;
+}
+
+.rating-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.rating-item {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  padding: 2rem 3.6rem;
+  border-radius: 11px;
+  width: 84%;
+  align-self: center;
+}
+
+.rating-item:first-child {
+  align-self: start;
+}
+.rating-item:last-child {
+  align-self: end;
+}
+
+.rating-item span {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.stars-list {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.testimonial {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 9px;
+  padding: 4.4rem 3.6rem;
+}
+
+.testimonial-author {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.testimonial-author img {
+  height: 4.4rem;
+  width: 4.4rem;
+  border-radius: 50%;
+}
+
+.author-name {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+.author-status {
+  color: hsl(333, 80%, 67%);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.testimonial-text {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+footer .container {
+  margin: 6.4rem auto 0;
+  padding-bottom: 1rem;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1.5rem;
+  color: hsl(303, 10%, 53%);
+}
+.attribution a:link,
+.attribution a:visited {
+  text-decoration: none;
+  color: hsl(305, 6%, 35%);
+  cursor: pointer;
+}
+
+.testimonial:nth-child(4) {
+  margin-top: 2.4rem;
+}
+
+.testimonial:nth-child(5) {
+  margin-top: 4.8rem;
+}

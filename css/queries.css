@@ -1,0 +1,71 @@
+/* 1184 px */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .stars-list {
+    gap: 0.8rem;
+  }
+  .rating-item span {
+    font-size: 1.6rem;
+  }
+}
+
+/* 912 px */
+
+@media (max-width: 59em) {
+  .header {
+    padding-right: 0;
+  }
+  .testimonial {
+    padding: 3.6rem 3rem;
+  }
+}
+
+@media (max-width: 51em) {
+  .grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  .container {
+    max-width: 60rem;
+  }
+  .header {
+    text-align: center;
+  }
+  .rating-item:last-child,
+  .rating-item:first-child {
+    align-self: center;
+  }
+  .rating-item {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .testimonial:nth-child(4),
+  .testimonial:nth-child(5) {
+    margin-top: 0;
+  }
+}
+
+/* 448 px */
+
+@media (max-width: 28em) {
+  html {
+    font-size: 50%;
+    background-image: url("../images/bg-pattern-top-mobile.svg"),
+      url("../images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 100%;
+    background-position: left top, right bottom;
+  }
+  .rating-item {
+    width: 100%;
+  }
+  .grid {
+    row-gap: 2.4rem;
+  }
+  .rating {
+    padding: 2.4rem 0;
+  }
+}
